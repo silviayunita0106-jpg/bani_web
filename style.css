@@ -1,0 +1,572 @@
+/*Mengatur seluruh halaman*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/*HEADER*/
+
+header{
+    position: sticky;
+    top: 0px;
+
+    z-index: 1000;
+
+    text-align: center;
+    background-color: #176b5b;
+    color: white;
+    padding: 25px;
+}
+
+header h1{
+    margin: 0;
+    font-size: 32px;
+}
+
+header p{
+    margin: 8px 0 0;
+    font-size: 15px;
+}
+
+/*NAVIGASI*/
+
+nav{
+    position: sticky;
+    top: 85px;
+
+    z-index: 900;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-height: 70px;
+
+    background-color: white;
+    gap: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+/*Menu navigasi*/
+nav a{
+    text-decoration: none;
+    margin: 0;
+    padding: 12px 25px;
+
+    font-weight: bold;
+    color: #176b5b;
+
+    cursor: pointer;
+
+    border-radius: 20px;
+}
+
+/*Efek ketika mouse diarahkan*/
+nav a:hover{
+    background-color: #176b5b;
+    color: white;
+}
+
+/*MAIN*/
+
+main{
+    width: 90%;
+    margin: 25px auto;
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 20px;
+}
+
+/*SIDEBAR*/
+
+aside{
+    width: 30%;
+    min-height: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+
+    position: sticky;
+    top: 195px;
+}
+
+aside a{
+    margin: 0;
+    padding: 10px 20px;
+
+    font-weight: bold;
+    color: #176b5b ;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+aside a:hover{
+    background-color: #176b5b;
+    color: white;
+}
+
+aside h3{
+    color: #176b5b;
+    margin-top: 0;
+    border-bottom: 2px solid #176b5b;
+    padding-bottom: 10px;
+}
+
+aside p a{
+    display: block;
+    border-radius: 8px;
+}
+
+aside p{
+    color: #176b5b;
+    padding: 12px;
+    margin:8px 0;
+    border-radius: 8px;
+    background-color: #f0f5f3;
+    cursor: pointer;
+}
+
+aside p:hover{
+    background-color: #176b5b;
+    color: white;
+}
+
+
+/*CONTENT*/
+
+section{
+    width: 70%;
+    min-height: 500px;
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-sizing: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+section h2{
+    color: #176b5b;
+    font-size: 28px;
+}
+
+section p{
+    line-height: 1.7;
+}
+
+/*CARD CONTAINER*/
+.card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+#kuliner{
+    width: 100%;
+}
+
+#penginapan{
+    width: 100%;
+}
+
+#wisata{
+    width: 100%;
+}
+
+/*CARD*/
+.card{
+    position: relative;
+    z-index: 1;
+
+    width: 180px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+/*GAMBAR CARD*/
+.card img{
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+
+/*ISI CARD*/
+.card h3{
+    color: #176b5b;
+    margin: 15px 15px  8px;
+}
+
+.card p{
+    margin: 0 15px 15px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/*EFEK CARD*/
+.card:hover{
+    position: relative;
+    z-index: 10;
+
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: #176b5b;
+    color: rgba(249, 248, 248);
+    margin-top: 30px;
+    width: 100%;
+}
+
+/*BAGIAN ATAS FOOTER*/
+.footer-content{
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+/*INFORMASI FOOTER*/
+.footer-info{
+    width: 50%;
+}
+
+.footer-info h3{
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.footer-info p{
+    margin: 8px 0;
+}
+
+/*SOCIAL MEDIA*/
+.social-media{
+    right: 20px;
+    bottom: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-media h3{
+    margin-right: 10px;
+}
+
+/*ITEM SOCIAL MEDIA*/
+.social-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*ICON SOCIAL MEDIA*/
+.social-items img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/*NAMA SOCIAL MEDIA*/
+.social-items p{
+    margin: 5px 0 0;
+    font-size: 12px;
+}
+
+/*FOOTER BAWAH*/
+.footer-bottom{
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255);
+    padding: 10px;
+}
+
+.footer-bottom p{
+    margin: 0;
+    font-size: 13px;
+}
+
+/*RESPONSIVE DESIGN UNTUK TABLET DAN HP*/
+
+@media (max-width: 768px){
+    /*HEADER*/
+    header{
+        padding: 20px;
+    }
+
+    header h1{
+        font-size: 25px;
+    }
+
+    /*NAVIGASI*/
+    nav{
+        top: 90px;
+        flex-wrap: wrap;
+        min-height: auto;
+        padding: 10px;
+        gap: 5px;
+    }
+
+    nav a{
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    /*MAIN*/
+    main{
+        width: 95%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /*SIDEBAR*/
+    aside{
+        width: 100%;
+        min-height: auto;
+    }
+
+    /*CONTENT*/
+    section{
+        width: 100%;
+        padding: 20px;
+    }
+
+    section h2{
+        font-size: 23px;
+    }
+
+    /*CARD*/
+    .card-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .card{
+        width: calc(50%-10px);
+    }
+
+    /*FOOTER*/
+    .footer-content{
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .footer-info{
+        width: 100%;
+    }
+
+    /*SOCIAL MEDIA*/
+    .social-media{
+        position: static;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* =====================================
+   MEMBATASI TEKS DESKRIPSI CARD
+===================================== */
+
+.card p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* =====================================
+   MODAL DETAIL
+===================================== */
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 99999;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    position: relative;
+    background: white;
+    width: 100%;
+    max-width: 650px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 20px;
+    border-radius: 12px;
+    animation: modalMuncul 0.3s ease;
+}
+
+@keyframes modalMuncul {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-content img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.modal-body h2 {
+    color: #fdcdcd;
+}
+
+.modal-body p {
+    line-height: 1.7;
+    color: #444;
+}
+
+/* Tombol tutup */
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    background: #176b5b;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .modal-content img {
+        height: 200px;
+    }
+}
+
+.btn-detail{
+    display: block;
+    width: fit-content;
+    margin: 10px auto 0;
+    top: 10px 18px;
+
+    background-color: #176b5b;
+    color: white;
+    text-decoration: none;
+
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.btn-detailhover {
+    background-color: #176b5b;
+    color: white;
+}
+
+.btn-detail a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* FORM KONTAK KAMI */
+.contact-form {
+    margin-top: 30px;
+    padding: 18px;
+    background-color:#f0f5f3;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form p {
+    font-size: 13px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 13px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 11px;
+    background-color: #176b5b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: #e7b051;
+    color: white;
+}

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>Explore Lombok</h1>
+    <div class="search-container">
+      <input type="text" id="searchInput"
+      placeholder="Cari kuliner, hotel, wisata?......">
+      <button onclick="cariData()">Cari</button>
+    </div>
+  </header>
+    
+    <nav>
+        <a href="#kuliner">kuliner</a>
+        <a href="#penginapan">penginapan</a>
+        <a href="#tempat wisata">tempat wisata</a>
+    </nav>
+    
+<main>
+<aside>
+   <h3><a href="#kuliner">Kuliner</a></h3>
+   <P><a href="#makanan">Makanan</a></P>
+   <P><a href="#minuman">Minuman</a></p>
+   <p><a href="#jajanan">Jajanan</a></p>
+
+   <h3><a href="#penginapan">Penginapan</a></h3>
+   <p><a href="#hotel">Hotel</a></p>
+   <P><a href="#homestay">Homestay</a></p>
+   <p><a href="#kos">Kos</a></p>
+
+   <h3><a href="#wisata">Wisata</a></h3>
+   <P><a href="#alam">Alam</a></P>
+   <P><a href="#sejarah">Sejarah</a></p>
+   <p><a href="#pantai">Pantai</a></p>
+   <P><a href="#lainnya">Dan lain-lain</a></p>
+
+<!-- FORM KONTAK KAMI -->
+<section id="kontak" class="contact-form">          
+  <h3>Kontak Kami</h3>
+              
+<div class="contact-form">
+  <form id="contactForm">
+    <div class="form-group">
+      <label for="nama">Nama</label>
+      <input type="text" id="nama" name="nama"
+        placeholder="Masukkan nama Anda" required>
+</div>
+
+<div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email"
+      placeholder="Masukkan email Anda" required>
+</div>
+
+<div class="form-group">
+  <label for="subjek">Subjek</label>
+  <input type="text" id="subjek" name="subjek"
+    placeholder="Subjek pesan" required>
+</div>
+
+<div class="form-group">
+  <label for="pesan">Pesan</label>
+  <textarea id="pesan" name="pesan"
+     placeholder="Tuliskan pesan Anda..."
+    rows="6" required></textarea>
+</div>
+
+      <button type="submit" class="btn" id="sendButton">Kirim Pesan</button>
+    </form>
+  </div>
+</section>
+
+ </aside>
+        
+<section>
+    <h2>selamat datang di explore lombok</h2>
+    <p>
+        temukan berbagai kuliner, penginapan, 
+                dan tempat wisata menarik di lombok. 
+            </p>
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="makanan.jpg" alt="kuliner lombok">
+                    <h3>kuliner lombok</h3>
+                    <p>temukan berbagai kuliner khas dari lombok</p>
+                    <button class="btn-detail" data-id="kuliner makanan-khas">selengkapnya
+                    </button>
+                </div>
+
+                <div id="jajanan" class="card">
+                    <img src="dumbeg.jpg" alt="jajanan lombok">
+                    <h3>jajanan lombok</h3>
+                    <p>temukan berbagai jajanan khas dari lombok</p>
+                <button class="btn-detail" data-id="kuliner makanan-khas">selengkapnya
+ </button>
+                </div>
+
+                <div id="alam" class="card">
+                    <img src="pemandangan rinjani.jpg" alt="wisata lombok">
+                    <h3>Tempat Wisata rinjani</h3>
+                    <p>temukan berbagai tempat wisata menarik di lombok</p>
+                 <button class="btn-detail" data-id="kuliner makanan-khas">selengkapnya
+ </button>
+                </div>
+
+                <div class="card">
+                    <img src="hotel.jpg" alt="penginapan lombok">
+                    <h3>Penginapan lombok</h3>
+                    <p>temukan berbagai penginapan nyaman di lombok</p>
+                <button class="btn-detail" data-id="kuliner makanan-khas">selengkapnya
+ </button>
+                </div>
+
+                <div class="card">
+                    <img src="es_wedang_lombok.jpg" alt="minuman khas lombok">
+                    <h3>Minuman lombok</h3>
+                    <p>temukan berbagai minuman khas dari lombok</p>
+                 <button class="btn-detail" data-id="kuliner makanan-khas">selengkapnya
+ </button>
+                </div>
+
+                <div class="card">
+                    <img src="minuman_brem_lombok.webp" alt="es lombok">
+                    <h3>Es segar lombok</h3>
+                    <p>temukan berbagai es khas dari lombok</p>
+                <button class="btn-detail" data-id="kuliner makanan-khas">selengkapnya
+ </button>
+                </div>
+                
+                <div class="card">
+                    <img src="taliwang.jpg" alt="kuliner lombok">
+                    <h3>Ayam Taliwang</h3>
+                    <p>Hidangan ayam bakar/goreng khas Lombok dengan lumuran bumbu rempah merah yang pekat, bercita rasa pedas gurih, biasanya disajikan dengan irisan mentimun segar dan jeruk limau.</p>
+                    <button class="btn-detail" data-id="kuliner makanan-khas">selengkapnya
+                    </button>
+                </div>
+            
+                <div class="card">
+                    <img src="senggigi.jpg" alt="kuliner lombok">
+                    <h3>Pantai Senggigi</h3>
+                    <p>Kawasan pantai ikonik di Lombok yang menjadi salah satu spot terbaik untuk menikmati matahari terbenam (sunset) dengan siluet perahu nelayan di laut yang tenang.</p>
+                    <button class="btn-detail" data-id="kuliner makanan-khas">selengkapnya
+                    </button>
+                </div>
+                
+        <div class="card">
+         <img src="gili.jpg" alt="kuliner lombok">
+         <h3>Gili Trawangan</h3>
+         <p>Pulau kecil di barat laut Lombok yang terkenal dengan pasir putihnya yang lembut, air laut jernih berwarna kebiruan, serta perahu tradisional yang bersandar di tepi pantai.</p>
+         <button class="btn-detail" data-id="kuliner makanan-khas">selengkapnya
+         </button>
+     </div>
+     
+     <div id="makanan" class="card">
+         <img src="sate.jpg" alt="kuliner lombok">
+         <h3>Sate Bulayak</h3>
+         <p>Sate khas Suku Sasak yang terbuat dari daging sapi, ayam, atau jeroan. Keunikan sate ini terletak pada bumbu kacangnya yang dicampur santan kental dengan rempah rahasia bercita rasa gurih pedas, serta disajikan bersama bulayak (lontong yang dibungkus melingkar dengan daun aren).</p>
+         <button class="btn-detail" data-id="kuliner makanan-khas">selengkapnya
+         </button>
+     </div>
+     
+     </div>
+
+<section id="kuliner" class="content-menu">
+
+    <h2>kuliner lombok</h2>
+
+    <p>
+        lombok memiliki berbagai makanan dan jajanan khas yang menarik di coba. kuliner lombok memiliki cita rasa yang khas dan menjadi bagian dari budaya masyarakat.
+                </p>
+
+                <div class="card-container">
+                    
+                    <div class="card" id="sasak">
+                        <img src="sate sasak khas lombok.jpeg" alt="sasak-lombok">
+                        <h3>sasak lombok</h3>
+                        <p>
+                            salah satu makanan khas lombok 
+                            yang terkenal dengan kaldu khas nya.
+                        </p>
+                     <button class="btn-detail" data-id="kuliner makanan-khas">selengkapnya
+ </button>
+                    </div>
+
+                    <div class="card" id="mknkhas">
+                        <img src="makanan.jpg" alt="makanan-khas">
+                        <h3>makanan khas</h3>
+                        <p>
+                            berbagai makanan tradisional yang terkenal 
+                            di berbagai tempat di lombok.
+                        </p>
+                         <button class="btn-detail" data-id="kuliner makanan-khas">selengkapnya
+ </button>
+                    </div>
+                     <div class="card" id="mnm">
+                    <img src="es_wedang_lombok.jpg" alt="minuman khas lombok">
+                    <h3>Minuman lombok</h3>
+                    <p>temukan berbagai minuman khas dari lombok</p>
+                 <button class="btn-detail" data-id="kuliner makanan-khas">selengkapnya
+ </button>
+                </div>
+                
+                 <div id="makanan" class="card">
+         <img src="sate.jpg" alt="kuliner lombok">
+         <h3>Sate Bulayak</h3>
+         <p>Sate khas Suku Sasak yang terbuat dari daging sapi, ayam, atau jeroan. Keunikan sate ini terletak pada bumbu kacangnya yang dicampur santan kental dengan rempah rahasia bercita rasa gurih pedas, serta disajikan bersama bulayak (lontong yang dibungkus melingkar dengan daun aren).</p>
+         <button class="btn-detail" data-id="kuliner makanan-khas">selengkapnya
+         </button>
+     </div>
+
+    </div>
+</section>
+
+
+<section id="penginapan" class="content-menu">
+
+    <h2>penginapan</h2>
+
+    <p>lombok juga memiliki tempat penginapan yang bagus dan nyaman. dan harganya juga murah, tempatnya juga bersih, dan pelayanannya juga bagus.</p>
+
+        <div class="card-container">
+                    
+            <div class="card">
+                        <img src="hotel.jpg" alt="hotel lombok raya">
+                        <h3>hotel lombok raya</h3>
+                        <p>
+                            salah satu hotel yang nyaman dan 
+                            tempatnya bersi juga pemandangan yang indah.
+                        </p>
+                 <button class="btn-detail" data-id="kuliner makanan-khas">selengkapnya
+ </button>
+                    </div>
+
+                    <div class="card">
+                        <img src="hotel_lombok.jpg" alt="fave hotel">
+                        <h3>fave hotel</h3>
+                        <p>
+                            salah satu hotel yang tidak menguras kantong.
+                            hotelnya juga bersih, nyaman, dam pemandangan yang
+                            tidak kalah indahnya.
+                        </p>
+                <button class="btn-detail" data-id="kuliner makanan-khas">selengkapnya
+ </button>
+                    </div>
+
+    </div>
+</section>
+
+<section id="wisata" class="content-menu">
+
+                <h2>tempat wisata</h2>
+
+                <p>
+                    lombok memiliki tempat wisata yang menarik dan seru
+                    untuk di kunjungi. lombok memiliki banyak tempat wisata 
+                    yang bisa di kunjungi.
+                </p>
+
+                <div class="card-container">
+                    </div>
+
+                <div class="card">
+                <img src="pemandangan rinjani 2.avif" alt="mountain rinjani">
+                        <h3>gunung rinjani</h3>
+                        <p>
+                            masih ada banyak tempat wisata di lombok
+                            salah satunya adalah gunung rinjani. yang terkenal
+                            dengan pemandangannya yang indah. 
+                        </p>
+                 <button class="btn-detail" data-id="kuliner makanan-khas">selengkapnya
+ </button>
+                    </div>
+                    
+                 <div class="card">
+     <img src="gili.jpg" alt="kuliner lombok">
+     <h3>Gili Trawangan</h3>
+     <p>Pulau kecil di barat laut Lombok yang terkenal dengan pasir putihnya yang lembut, air laut jernih berwarna kebiruan, serta perahu tradisional yang bersandar di tepi pantai.</p>
+     <button class="btn-detail" data-id="kuliner makanan-khas">selengkapnya
+     </button>
+ </div>
+ 
+     <div class="card">
+                    <img src="senggigi.jpg" alt="kuliner lombok">
+                    <h3>Pantai Senggigi</h3>
+                    <p>Kawasan pantai ikonik di Lombok yang menjadi salah satu spot terbaik untuk menikmati matahari terbenam (sunset) dengan siluet perahu nelayan di laut yang tenang.</p>
+                    <button class="btn-detail" data-id="kuliner makanan-khas">selengkapnya
+                    </button>
+                </div>
+
+    </div>
+</section>
+</section>
+
+</main>
+
+<footer>
+    
+  <div class="footer-content">
+    
+    <div class="footer-info">
+      <h3>Explore Lombok</h3>
+      <p>© 2026 Explore Lombok</p>
+      <p>Jelajahi Nikmati Kenali Lombok</p>
+    </div>
+    
+    <div class="footer-media">
+      <p>Ikuti Kami</p>
+    </div>
+    
+    <div class="social-items">
+        <a href="https://www.tiktok.com/@bnyy_0014?_r=1&_t=ZS-99bbzrJrLs0">
+            <img src="tiktok.webp" alt="tiktok" target="_blank"></a><p>TikTok</p>
+    </div>
+    
+    <div class="social-items">
+      <a href="https://youtube.com">
+      <img src="youtube.webp" alt="YouTube" target="_blank"></a>
+      <p>YouTube</p>
+    </div>
+    
+    <div class="social-items">
+      <a href="https://instagram.com">
+      <img src="instagram.webp" alt="Instagram" target="_blank"></a>
+       <p>Instagram</p>   
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>Bali Island</p>
+  </div>
+  
+</footer>
+
+<div class="modal" id="detailModal">
+  <div class="modal-content">
+    <button class="modal-close" id="closeModal" aria-label="Tutup">&times;</button>
+    <img src="" alt="" id="modalImage">
+    <div class="modal-body">
+      <span class="card-category" id="modalCategory"></span>
+      <h2 id="modalTitle"></h2>
+      <p class="card-location" id="modalLocation"></p>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html> 
